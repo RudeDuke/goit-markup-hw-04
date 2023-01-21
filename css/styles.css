@@ -1,0 +1,345 @@
+/* ============================================================== CSS-VARIABLES ==================================================================== */
+:root {
+  --main-text-color: #434455;
+  --main-titles-color: #2e2f42;
+  --borders-main-color: #e7e9fc;
+  --main-background-color: #ffffff;
+  --accent-color: #404bbf;
+
+  --logo-ivariable-part-color: #4d5ae5;
+  --logo-light-part-color: #f4f4fd;
+  --logo-dark-part-color: #2e2f42;
+
+  --hero-titles-color: #ffffff;
+
+  --buttons-titles-color: #4d5ae5;
+  --buttons-background-color: #e7e9fc;
+  --buttons-hover-color: #ffffff;
+
+  --dark-sections-color: #f4f4fd;
+  --hero-and-footer-background-color: #2e2f42;
+
+  --footer-text-color: #e7e9fc;
+}
+/* ==================================================== REMOVERS OF PREDEFINED TAG PROPERTIES =================================================== */
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
+}
+/* ==================================================================== BODY ===================================================================== */
+body {
+  font-family: 'Roboto', sans-serif;
+  /* font-weight: 400;                                                       ====> basic paragraph font-weight, predefined by a browser by default */
+  /* font-size: 16px;                                                        ====> basic paragraph font-size, predefined by a browser by default */
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+}
+/* ================================================================= COMPONENTS ================================================================== */
+
+/*  -------- [CONTAINER] ------- */
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*  --------- [LOGO] ---------- */
+
+.logo-invariable-part,
+.logo-dark-part,
+.logo-light-part {
+  font-family: 'Raleway', sans-serif;
+  /* font-weight: 800;                                                         ====> the only pre-connected font of the above-mentioned font-family*/
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-invariable-part {
+  color: var(--logo-ivariable-part-color);
+}
+
+.logo-dark-part {
+  color: var(--logo-dark-part-color);
+}
+
+.logo-light-part {
+  color: var(--logo-light-part-color);
+}
+
+/* --------- [BUTTONS] -------- */
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--buttons-titles-color);
+  background-color: var(--buttons-background-color);
+  border: 1px solid var(--borders-main-color);
+  padding: 12px 24px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--buttons-hover-color);
+  background-color: var(--accent-color);
+  border: inherit;
+}
+/* ===================================================================== HEADER ====================================================================== */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--borders-main-color);
+}
+
+.header-container {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
+}
+
+.menu-link {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--main-titles-color);
+  /* Расширение области клика */
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.address {
+  margin-left: auto;
+}
+
+.contact-list {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-link {
+  font-style: normal;
+  line-height: 1.5;
+  color: var(--main-text-color);
+  /* Расширение области клика */
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+/* ================================================================== HERO SECTION =================================================================== */
+.hero-section {
+  background-color: var(--hero-and-footer-background-color);
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.hero-title {
+  /* font-weight: 700;                                                                ====> basic <h> font-weight (bold), predefined by a browser by default */
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--hero-titles-color);
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.hero-button {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--hero-titles-color);
+  background-color: var(--buttons-titles-color);
+  padding: 16px 32px;
+  margin-top: 48px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color);
+}
+/* =================================================================== OTHER SECTIONS ==================================================================== */
+
+/* --------- [SECTION BLOCKS & SECTION TITLES] -------- */
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.dark-theme-section {
+  background-color: var(--dark-sections-color);
+}
+
+.our-services-section {
+  padding-top: 0;
+  padding-bottom: 120px;
+}
+
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--main-titles-color);
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* --------- [LISTS] -------- */
+
+.advantages-list,
+.service-list,
+.team-list,
+.project-category-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.project-category-list {
+  margin-bottom: 72px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+/* --------- [LIST ITEMS] -------- */
+
+.advantage {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.service {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.team-member-card {
+  width: calc((100% - 3 * 24px) / 4);
+  background-color: var(--main-background-color);
+}
+
+.project-card {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+/* --------- [CARD CAPTIONS] -------- */
+
+.team-member-data {
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.project-data {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid var(--borders-main-color);
+  border-top: none;
+}
+
+/* --------- [TITLES & DESCRIPTIONS] -------- */
+
+.advantage-title,
+.team-member-name,
+.project-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-titles-color);
+  margin-bottom: 8px;
+}
+
+.advantage-description,
+.team-member-position,
+.project-subtitle {
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+/* ====================================================================== FOOTER ======================================================================= */
+
+.footer {
+  background-color: var(--hero-and-footer-background-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
+  max-width: 265px;
+  margin-top: 16px;
+}
